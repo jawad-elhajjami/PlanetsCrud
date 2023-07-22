@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/white"
+    android:id="@+id/planets_cards_container"
+    android:layout_margin="8dp"
+    app:cardElevation="8dp"
+    app:cardCornerRadius="8dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Planet name"
+            android:id="@+id/textViewName"
+            android:textSize="20sp"
+            android:fontFamily="@font/semibold"
+            android:textColor="@color/black"
+        />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="4500 million km²"
+            android:id="@+id/textViewSize"
+            android:textColor="@color/primary"
+            android:fontFamily="@font/medium"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+            android:fontFamily="@font/light"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:id="@+id/textViewDescription"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

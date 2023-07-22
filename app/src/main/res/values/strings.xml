@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Planets</string>
+    <string name="firstPageHeading">Know the universe</string>
+    <string name="firstPageDescription">a basic CRUD System to manage a database of planets</string>
+    <string name="firstPageBtnTxt">Get started</string>
+    <string name="firstPageImageDescription">A vector image of a planet</string>
+    <string name="planetsListPage_ImageDescription">A vector image of pink planet</string>
+    <string name="fab_content_desc">Button to add a new planet to the database.</string>
+    <string name="no_planet_to_show_message">No planet added yet !</string>
+    <string name="planet_name_label">Planet name</string>
+    <string name="planet_size_label">Planet size</string>
+    <string name="planet_description_label">Planet description</string>
+    <string name="add_planet_text">Add a new planet</string>
+    <string name="add_planet">Add planet</string>
+</resources>

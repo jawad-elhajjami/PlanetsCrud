@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".AddPlanetActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/semibold"
+        android:text="@string/add_planet_text"
+        android:textAlignment="center"
+        android:textColor="@color/primary"
+        android:textSize="24sp"
+        android:id="@+id/formTitleTxt"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:id="@+id/planetImage"
+        android:layout_height="wrap_content"
+        android:src="@drawable/planet3"
+        android:layout_below="@id/formTitleTxt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:contentDescription="@string/firstPageImageDescription"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/planet_name_input"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/planetImage"
+        android:layout_marginBottom="20dp"
+        android:hint="@string/planet_name_label">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/planet_name_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/planet_size_input"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/planet_name_input"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:hint="@string/planet_size_label">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/planet_size_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/planet_desc_input"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/planet_size_input"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/planet_description_label">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/planet_description_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/createPlanetBtn"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/planet_desc_input"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:padding="15dp"
+        android:text="@string/add_planet" />
+</RelativeLayout>
